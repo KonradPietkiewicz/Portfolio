@@ -29,7 +29,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     height: 90px;
-    padding: 15px 50px 15px 80px;
+    padding: 15px 30px 15px 80px;
 }
 
 .menu_list {
@@ -38,7 +38,7 @@ header {
 }
 
 .menu_item {
-    margin: 0 20px;
+    margin: 0 15px;
     font-size: 1.7rem;
     text-transform: uppercase;
     line-height: 6rem;
