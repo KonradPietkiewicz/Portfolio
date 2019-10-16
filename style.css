@@ -119,6 +119,7 @@ hr {
     background-color: #5E72E4;
     margin-top: 15px;
     margin-bottom: 45px;
+    box-shadow: 0 0 6px 3px blue;
 }
 
 .education_intro {
