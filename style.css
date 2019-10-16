@@ -94,7 +94,7 @@ hr {
     height: 20vh;
     margin: 30px auto;
     border-radius: 5px;
-    background-color: #71706E;
+    background-color: #2DCE89;
 }
 
 .about-me {
@@ -116,7 +116,7 @@ hr {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #0E122E;
+    background-color: #5E72E4;
     margin-top: 15px;
     margin-bottom: 15px;
 }
