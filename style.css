@@ -186,32 +186,29 @@ hr {
 .it {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 42%;
+    flex-basis: 40%;
     margin: 0 auto;
 }
 
 .technologies {
-    flex-basis: 20%;
+    flex-basis: 25%;
     margin: 0 auto;
     margin-top: 20px;
 }
 
 .technologies_image {
     display: block;
-    width: 60px;
+    width: 70px;
     height: 50px;
     padding-left: 20px;
 }
 
 .technologies_info {
-    display: flex;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
-    align-items: center;
-    justify-content: center;
     margin-top: 10px;
-    padding-left: 10px;
+    text-align: center;
 }
 
 footer {
