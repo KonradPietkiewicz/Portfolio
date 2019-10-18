@@ -94,6 +94,7 @@ hr {
     margin: 30px auto;
     border-radius: 5px;
     background-color: #2DCE89;
+    box-shadow: 0 0 6px 3px green;
 }
 
 .about-me {
@@ -171,7 +172,7 @@ hr {
     width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .skill_intro {
@@ -182,10 +183,16 @@ hr {
     margin-bottom: 20px;
 }
 
-.technologies {
-    flex-basis: 20%;
+.it {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 42%;
+    margin: 0 auto;
+}
+
+.technologies {
+    flex-basis: 20%;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -203,6 +210,7 @@ hr {
     color: black;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     padding-left: 10px;
 }
 
