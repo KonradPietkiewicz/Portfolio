@@ -16,6 +16,7 @@ html {
 }
 
 header {
+    width: 100%;
     height: 100vh;
     background-image: url("assets/header.jpg");
     /*background-attachment: fixed;*/
@@ -84,7 +85,7 @@ hr {
 .main {
     display: flex;
     flex-wrap: wrap;
-    background-color: #E9ECEF;
+    background-color: #e9ecef;
 }
 
 .main-articles {
@@ -93,7 +94,7 @@ hr {
     max-width: 1000px;
     margin: 30px auto;
     border-radius: 5px;
-    background-color: #2DCE89;
+    background-color: #2dce89;
     box-shadow: 0 0 6px 3px green;
 }
 
@@ -116,7 +117,7 @@ hr {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #5E72E4;
+    background-color: #5e72e4;
     margin-top: 15px;
     margin-bottom: 45px;
     box-shadow: 0 0 6px 3px blue;
@@ -186,21 +187,21 @@ hr {
 .it {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 40%;
+    flex-basis: 60%;
     margin: 0 auto;
 }
 
 .technologies {
     flex-basis: 25%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .technologies_image {
     display: block;
+    margin: 0 auto;
     width: 70px;
-    height: 50px;
-    padding-left: 20px;
+    height: 70px;
 }
 
 .technologies_info {
@@ -211,15 +212,20 @@ hr {
     text-align: center;
 }
 
-footer {
+.footer {
     display: flex;
-    background-color: #140F0F;
+    flex-basis: 100%;
+    background-color: #140f0f;
     height: 15vh;
 }
 
-#footer {
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+.protection {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.protection_name {
+    font-size: 1.5rem;
+    line-height: 15vh;
+    padding-left: 10px;
 }
