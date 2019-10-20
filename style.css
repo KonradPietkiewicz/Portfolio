@@ -229,3 +229,22 @@ hr {
     line-height: 15vh;
     padding-left: 10px;
 }
+
+.link {
+    display: flex;
+    flex-basis: 50%;
+    /*background: chartreuse;*/
+    justify-content: center;
+}
+
+.link_icon {
+    line-height: 15vh;
+    margin: 0 15px;
+    color: #b9c8cc;
+    font-size: 3rem;
+    transition: 0.8s;
+}
+
+.link_icon:hover {
+    color: white;
+}
