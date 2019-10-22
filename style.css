@@ -34,7 +34,6 @@ header {
 }
 
 .menu_list {
-    position: fixed;
     display: flex;
     list-style: none;
 }
