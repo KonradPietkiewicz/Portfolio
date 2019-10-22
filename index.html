@@ -17,15 +17,15 @@
         <nav class="menu">
           <ul class="menu_list">
             <li class="menu_item">
-              <a href="" class="menu_link">KonradPietkiewicz.PL</a>
+              <a href="#" class="logo" class="menu_link">KonradPietkiewicz.PL</a>
             </li>
-            <li class="menu_item"><a href="" class="menu_link">Home</a></li>
-            <li class="menu_item"><a href="" class="menu_link">O mnie</a></li>
-            <li class="menu_item"><a href="" class="menu_link">Edukacja</a></li>
+            <li class="menu_item"><a href="#" class="home" class="menu_link">Home</a></li>
+            <li class="menu_item"><a href="#"  class=" me" class="menu_link">O mnie</a></li>
+            <li class="menu_item"><a href="#" class="edu" class="menu_link">Edukacja</a></li>
             <li class="menu_item">
-              <a href="" class="menu_link">Umiejętności</a>
+              <a href="#" class="skil" class="menu_link">Umiejętności</a>
             </li>
-            <li class="menu_item"><a href="" class="menu_link">Kontakt</a></li>
+            <li class="menu_item"><a href="#" class="contact" class="menu_link">Kontakt</a></li>
           </ul>
           <hr />
         </nav>
@@ -33,9 +33,9 @@
           <img class="person_photo" src="assets/me.png" alt="" />
           <h1 class="person_name">Konrad Pietkiewicz</h1>
         </div>
-      </header>
+        </header>
       <div class="main">
-        <section class="main-articles">
+        <section class="main-articles" data-section= "me" id = "me"> 
           <h1 class="about-me">O mnie:</h1>
           <p class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
@@ -46,7 +46,7 @@
             officiis!
           </p>
         </section>
-        <section class="education">
+        <section class="education" data-section= "edu" id = "edu"> 
           <h1 class="education_intro">Edukacja</h1>
           <article class="article">
             <img src="assets/school.png" alt="" class="article_image" />
@@ -67,7 +67,7 @@
             </div>
           </article>
         </section>
-        <section class="skill">
+        <section class="skill" data-section= "skil" id = "skil">
           <h1 class="skill_intro">Umiejętności</h1>
           <div class="it">
             <div class="technologies">
@@ -105,7 +105,7 @@
           </div>
         </section>
       </div>
-      <div class="footer">
+      <div class="footer" data-section= "contact" id = "contact">
         <div class="protection">
           <div id="protection_copy"></div>
           <p class="protection_name">Konrad Pietkiewicz</p>
@@ -124,6 +124,15 @@
         ></a>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $('nav a').on('click', function () {
+       const goToSection = "[data-section=" + $(this).attr('class') + "]";
+        $('body, html').animate({
+         scrollTop: $(goToSection).offset().top
+        })
+       })
+    </script>
     <script src="footer.js"></script>
   </body>
 </html>
